@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.ChainOfResponsibility", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{AD58F5DC-9194-4B01-ABEC-5CF02469DF78}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.TemplateMethod", "3.TemplateMethod", "{BFD6BEEA-3A6B-4352-88F1-1B22BF921C23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{14792614-F7C1-4DA6-B33B-850B28D87F07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{AD58F5DC-9194-4B01-ABEC-5CF02469DF78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD58F5DC-9194-4B01-ABEC-5CF02469DF78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD58F5DC-9194-4B01-ABEC-5CF02469DF78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14792614-F7C1-4DA6-B33B-850B28D87F07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14792614-F7C1-4DA6-B33B-850B28D87F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14792614-F7C1-4DA6-B33B-850B28D87F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14792614-F7C1-4DA6-B33B-850B28D87F07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D6B45C52-3C57-4CCE-9110-D86CEBE5E02F} = {4005E8A1-5715-4672-8771-0E8C3E0E02C0}
 		{AD58F5DC-9194-4B01-ABEC-5CF02469DF78} = {66B179CF-69E6-4582-A489-2CE876B7E4E5}
+		{14792614-F7C1-4DA6-B33B-850B28D87F07} = {BFD6BEEA-3A6B-4352-88F1-1B22BF921C23}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {327A43B7-51C2-4A1C-8F93-D57B91C36715}
