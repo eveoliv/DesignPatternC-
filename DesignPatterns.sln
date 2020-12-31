@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{D6B45C52-3C57-4CCE-9110-D86CEBE5E02F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "Strategy\Strategy.csproj", "{D6B45C52-3C57-4CCE-9110-D86CEBE5E02F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignStrategy", "DesignStrategy", "{4005E8A1-5715-4672-8771-0E8C3E0E02C0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Strategy", "1.Strategy", "{4005E8A1-5715-4672-8771-0E8C3E0E02C0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignChainOfResponsibility", "DesignChainOfResponsibility", "{66B179CF-69E6-4582-A489-2CE876B7E4E5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.ChainOfResponsibility", "2.ChainOfResponsibility", "{66B179CF-69E6-4582-A489-2CE876B7E4E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{AD58F5DC-9194-4B01-ABEC-5CF02469DF78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{AD58F5DC-9194-4B01-ABEC-5CF02469DF78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
