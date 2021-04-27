@@ -11,18 +11,20 @@ namespace Cronograma
 
             var listaFeriados = new List<DateTime>
             {
-                 new DateTime(2021,4,21)
+                new DateTime(2021,4,19),
+                new DateTime(2021,4,20),
+                new DateTime(2021,4,21),
+                new DateTime(2021,4,23)
             };
 
             var datasCronograma = new List<DateTime>
             {
-                new DateTime(2021,4,20),
-                new DateTime(2021,4,21),
-                new DateTime(2021,4,22)               
+                //new DateTime(2021,4,19),
+                new DateTime(2021,4,22)                              
             };
 
             
-            var dataEnvio = new DateTime(2021, 4, 23);
+            var dataEnvio = new DateTime(2021, 4, 26);
             var validaEnvio = DiaEnvio.ValidaDiaDoEnvio(dataEnvio, listaFeriados);
             var diasUteisParaEnvio =  Feriado.RelacionaCronogramaEFeriado(listaFeriados, datasCronograma, dataEnvio);
 

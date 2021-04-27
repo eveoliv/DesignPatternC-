@@ -9,11 +9,11 @@ namespace Cronograma
     {
         public static List<DateTime> RelacionaCronogramaEFeriado(List<DateTime> listaFeriados, List<DateTime> datasCronograma, DateTime dataEnvio)
         {
-            var datasFeriados = new List<DateTime>();
+            //  var datasFeriados = new List<DateTime>();
 
             //var maxDataCronograma = (from c in datasCronograma select c).Max();
 
-            var feriadosEncontrados = new List<DateTime>();
+            //var feriadosEncontrados = new List<DateTime>();
             for (int i = 0; i < 10; i++)
             {
                 //var buscaFeriado = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day - i);
@@ -24,7 +24,7 @@ namespace Cronograma
                 {
                     //feriadosEncontrados.Add(f);
                     Console.WriteLine($"Feriado adicionado: {f}");
-                    datasFeriados.Add(f);
+                    listaFeriados.Add(f);
                 }
             }
 
@@ -45,7 +45,7 @@ namespace Cronograma
 
             var datasPossiveis = new List<DateTime>();
             var diaUtil = new DiaUtil();
-            datasCronograma.Any(data => diaUtil.RetornarDiaUtil(data, datasFeriados, datasPossiveis).Contains(dataEnvio));
+            datasCronograma.Any(data => diaUtil.RetornarDiaUtil(data, listaFeriados, datasPossiveis).Contains(dataEnvio));
             //datasCronograma.Any(data => diaUtil.RetornarDiaUtil(data, datasFeriados, datasPossiveis).Contains(DateTime.Now.Date));
             return datasPossiveis;
         }

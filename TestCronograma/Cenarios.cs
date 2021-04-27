@@ -594,5 +594,35 @@ namespace TestCronograma
             Assert.Equal(dataEsperada2, diasPossiveis[1]);
             Assert.Equal(dataEsperada3, diasPossiveis[2]);
         }
+
+        [Fact]
+        public void CoronogramaEntreFeriados_Bloqueia()
+        {
+            //Arranje
+            var listaFeriados = new List<DateTime>
+            {
+                new DateTime(2021,4,19),
+                new DateTime(2021,4,20),
+                new DateTime(2021,4,21),
+                new DateTime(2021,4,23)
+            };
+
+            var datasCronograma = new List<DateTime>
+            {
+                new DateTime(2021,4,22)
+            };
+
+            var dataEnvio = new DateTime(2021, 4, 26);
+
+            //Act            
+            var validaEnvio = DiaEnvio.ValidaDiaDoEnvio(dataEnvio, listaFeriados);
+            var diasPossiveis = Feriado.RelacionaCronogramaEFeriado(listaFeriados, datasCronograma, dataEnvio);
+
+            //Assert
+            var dataEsperada1 = new DateTime(2021, 4, 20);//Cronograma normal      
+
+            Assert.True(validaEnvio);
+            Assert.Equal(dataEsperada1, diasPossiveis[0]);
+        }
     }
 }
